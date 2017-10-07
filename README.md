@@ -12,7 +12,7 @@ let f2 = (ar,num3,num4) => {};
 pt.addFunc(f1);
 pt.addFunc(f2);
 
-// {"ar": {"num":{"num":["Function: f2", "Function: f3"]}}}
+// { "ar": { "num": { "num": ["Function: f2", "Function: f3"] } } }
 console.log(pt.funcTree);
 ```
 
