@@ -1,8 +1,9 @@
 "use strict"
 
-const chai = require("chai");
-const is   = require("is");
-const ParamTree = require("../paramtree.js");
+import chai from "chai";
+import is from "is";
+import ParamTree from "../paramtree";
+
 const passIns = ["",1,()=>{},[],{},null,undefined,Symbol("")];
 
 describe("ParamTree", function() {
