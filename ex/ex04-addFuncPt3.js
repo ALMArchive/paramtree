@@ -1,4 +1,4 @@
-const ParamTree = require("../paramtree.js");
+import ParamTree from "../paramtree.js";
 
 // Construct with ignoreLength true
 const pt1 = new ParamTree(true);

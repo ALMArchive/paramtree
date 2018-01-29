@@ -1,4 +1,4 @@
-const ParamTree = require("../paramtree.js");
+import ParamTree from "../paramtree.js";
 
 // There are three ways to construct ParamTree
 

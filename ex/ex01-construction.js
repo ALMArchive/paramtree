@@ -1,4 +1,4 @@
-const ParamTree = require("../paramtree.js");
+import ParamTree from "../paramtree.js";
 
 // Default construction
 // igLen = false, regex = /[0-9]/g
