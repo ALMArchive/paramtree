@@ -4,9 +4,10 @@ import path from "path";
 export default {
   entry: {
     "paramtree": "./paramtree.js",
-    "paramtree.min": "./paramtree.js"
   },
   output: {
+    library: "paramtree",
+    libraryTarget: "umd",
     path: path.resolve(__dirname, "dist"),
     filename: "[name].js"
   },

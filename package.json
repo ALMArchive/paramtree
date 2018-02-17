@@ -2,11 +2,16 @@
   "name": "paramtree",
   "version": "0.1.2",
   "description": "Library to sort functions into object trees by their parameter lengths and names.",
-  "main": "paramtree.js",
+  "main": "dist/paramtree.js",
+  "files": [
+    "dist"
+  ],
   "scripts": {
-    "test": "mocha test --compilers js:babel-register --require babel-polyfill",
+    "test": "mocha -r @std/esm test",
     "ex": "node -r @std/esm ex/main-example.js",
-    "exAll": "node -r @std/esm ex/runAll.js"
+    "exAll": "node -r @std/esm ex/runAll.js",
+    "build": "webpack",
+    "prepublishOnly": "npm run build"
   },
   "repository": {
     "type": "git",
@@ -28,12 +33,12 @@
   },
   "homepage": "https://github.com/ALMaclaine/paramtree#readme",
   "devDependencies": {
+    "@babel/core": "^7.0.0-beta.40",
+    "@babel/polyfill": "^7.0.0-beta.40",
+    "@babel/preset-env": "^7.0.0-beta.40",
+    "@babel/register": "^7.0.0-beta.40",
     "@std/esm": "^0.20.0",
-    "babel-core": "^6.26.0",
-    "babel-loader": "^7.1.2",
-    "babel-polyfill": "^6.26.0",
-    "babel-preset-env": "^1.6.1",
-    "babel-register": "^6.26.0",
+    "babel-loader": "^8.0.0-beta.0",
     "chai": "^4.1.2",
     "eslint": "^4.16.0",
     "eslint-config-airbnb": "^16.1.0",
